@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>arc</title>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="200"></canvas>
+<script type="text/javascript">
+
+var canvas = document.getElementById("2d");
+context.beginPath(); //경로 초기화
+//antifclockwise " false(시계방향)
+//1.0math.pi => 180도 반원
+//ㅂ.0math.pi => 136도 원
+context.arc(100, 100, 80, 0, 1.0*Math.PI, false);
+
+</script>
+
+</body>
+</html>
