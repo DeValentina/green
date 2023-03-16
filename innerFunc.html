@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>innerFunc</title>
+<script type="text/javascript">
+function outerFunction() {
+	var a=10;
+	var b=20;
+	function innerFunction() {
+		var b=30;
+		var c=40;
+		alert(a);
+		alber(b);
+		alber(c);
+	}
+	innerFunction();
+	alert('outerFunction 입니다.');
+}
+
+outerFunction();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
