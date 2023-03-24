@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>color-style</title>
+<style type="text/css">
+body {
+	color:red;
+}
+h1 {color:#00ff00;}
+p {color:rbg(0,0,255);}
+
+#rgb1 {background-color: rgb(255,0,0);}/* red */
+#rgb2 {background-color: rgb(0,255,0);}/* green */
+#rgb3 {background-color: rgb(0,0,255);}/* blue */
+
+#rgba1 {background-color: rgba(255,0,0, 0.3);} /* red with opacity */
+#rgba2 {background-color: rgba(0,255,0, 0.3);} /* green with opacity */
+#rgba3 {background-color: rgba(0,0,255, 0.3);} /* blue with opacity */
+
+#hsl1 {background-color: hsl(120, 100%, 50%);} /* green */
+#hsl2 {background-color: hsl(120, 100%, 75%);} /* light green */
+#hsl3 {background-color: hsl(120, 100%, 25%);} /* dark green */
+#hsl4 {background-color: hsl(120, 60%, 70%);} /* pastel green */
+
+#hsla1 {background-color: hsl(120, 100%, 50%, 0.3);} /* green with opacity*/
+#hsla2 {background-color: hsl(120, 100%, 75%, 0.3);} /* light green with opacity*/
+#hsla3 {background-color: hsl(120, 100%, 25%, 0.3);} /* dark green with opacity*/
+#hsla4 {background-color: hsl(120, 60%, 70%, 0.3);} /* pastel green with opacity*/
+
+</style>
+</head>
+<body>
+<h1>Color 속성</h1>
+<p>RGB 속성</p>
+<div id="rgb1">rgb스타일1</div>
+<div id="rgb2">rgb스타일2</div>
+<div id="rgb3">rgb스타일3</div>
+
+<p>RGBA 속성</p>
+<div id="rgba1">rgba스타일1</div>
+<div id="rgba2">rgba스타일2</div>
+<div id="rgba3">rgba스타일3</div>
+
+<p>HSL 속성</p>
+<div id="hsl1">hsl스타일1</div>
+<div id="hsl2">hsl스타일2</div>
+<div id="hsl3">hsl스타일3</div>
+
+<p>HSLA 속성</p>
+<div id="hsla1">hsla스타일1</div>
+<div id="hsla2">hsla스타일2</div>
+<div id="hsla3">hsla스타일3</div>
+
+
+</body>
+</html>
