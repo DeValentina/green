@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>gugudan3</title>
+<script type="text/javascript">
+function enter() {
+	console.log(window.event.keyCode);
+	if(window.event.keyCode == 13) {//엔터키 13 눌러지면
+		gugu();//함수호출
+	}
+}
+
+function gugu() {
+	var dan = document.getElementById("dan").value;
+	var str = "";
+	for (var i=1; i<=9; i++) {
+		str+= dan + "x" + i + "=" + dan*i + "<br>";
+	}
+	//id가 result인 태그의 내부영역에 결과를 html로 출력
+	document.getElementById("result").innerHTML = str;
+	//변환처리 필요함 html~, innertext는 html무시하고 출력
+ }
+</script>
+
+<style type="text/css">
+#result {
+	background-color : aqua;
+	width:150px;
+	}
+
+
+</style>
+</head>
+<body>
+단을 입력하세요.
+<input type="text" id="dan" value="2" size="5" onkeyup="enter()">
+<input type="button" value="확인" onclick="gugu()">
+<div id="result">innerHTML영역</div>
+
+</body>
+</html>
