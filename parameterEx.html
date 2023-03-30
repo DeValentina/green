@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function parameter() {
+	var out = '';
+	var length=arguments.length;
+	
+	if(length==0) {//입력받은 매개변수가 없으면
+		out += 'Zero';
+	}else if(length == 1 ){
+		out += 'One';
+	}else {
+		out += 'More';	
+	}
+	return out;
+}
+
+var output = parameter();
+alert(output);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

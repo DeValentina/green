@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>annoyClosure</title>
+<script type="text/javascript">
+function outerFunction(name) {
+	var output = 'Hello' + name + '!';
+	return function() {
+		alert(output);
+	};
+}
+
+outerFunction('Kim')(); //함수호출 역할을 해야하기 때문에 ();추가
+//즉, 외부함수의 멤버지역변수와 리턴받는 값이 익명함수기 때문에 호출기호 써야함
+</script>
+</head>
+<body>
+
+</body>
+</html>
