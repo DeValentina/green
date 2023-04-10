@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>app-link</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home">
+ <div data-role="header" data-theme="b" >
+  <h1>스마트 페이지 링크 처리법</h1>
+ </div>
+ <div data-role="content">
+  <h2>외부 프로그램 링크</h2>
+  <ul data-role="listview" data-inset="true">
+   <li><a href="mailto:gd@gmail.com">이메일 링크</a></li>
+   <li><a href="tel:0212345678" target="_blank">전화번호 링크</a></li>
+   <li><a href="sms:0102345678" target="_blank">SMS 문자 링크</a></li>
+   <li><a href="https://www.google.co.kr/maps/place/KH%EC%A0%95%EB%B3%B4%EA%B5%90%EC%9C%A1%EC%9B%90+%EA%B0%95%EB%82%A82%EA%B4%80/data=!3m1!4b1!4m6!3m5!1s0x357ca1455052b1dd:0xe48d3ff18fbe9fd0!8m2!3d37.4984971!4d127.0326036!16s%2Fg%2F11tcjyg01w?hl=ko" target="_blank">지도 링크</a></li>
+  </ul>
+ </div>
+ <div data-role="footer" data-position="fixed" data-theme="b">
+  <a href="index.html" data-icon="grid" rel="external">Index</a>
+ </div>
+</div>
+</body>
+</html>
